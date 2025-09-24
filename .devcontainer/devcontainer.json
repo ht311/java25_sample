@@ -1,0 +1,26 @@
+{
+  "name": "Java 25 Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "redhat.java"
+      ]
+    },
+    "settings": {
+      // Java
+      "java.home": "/usr/local/openjdk-25",
+      // Terminal
+      "terminal.integrated.profiles": {
+        "bash": {
+          "path": "/bin/bash"
+        }
+      },
+      "terminal.integrated.defaultProfile.linux": "bash"
+    }
+  },
+  "remoteUser": "vscode"
+}
